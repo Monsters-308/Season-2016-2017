@@ -1,3 +1,17 @@
+# Advanced Robot Drive
+
+This is a part of the code for the FIRST Robotics Competition, which was used to controll a chasis with 6 motors.
+
+* [AdvancedRobotDrive](https://github.com/AlexanderKaschta/AdvancedRobotDrive) - The original github repository with the code and all other information
+
+
+## Author
+
+- Alexander Kaschta
+
+## License
+
+```
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -186,7 +200,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright 2017 Monsters308
+   Copyright 2017 Alexander Kaschta
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -199,3 +213,6 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+```
+
+
