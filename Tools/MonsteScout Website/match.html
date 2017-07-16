@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Match Scouting</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MonsterScout</a>
+
+      
+    </nav>
+    <div class="container">
+
+    		<div class="form-group"  style="margin-top: 72px;">
+    			<h2>Before match:</h2>
+				<hr>
+				<br>
+    			<label for="selectEvent">Event:</label>
+				<select class="form-control" id="selectEvent" required>
+					<option value="-1">Please select</option>
+					<option value="3/16/2017;Waterford">3/16/2017: Waterford</option>
+					<option value="3/17/2017;Waterford">3/17/2017: Waterford</option>
+					<option value="3/18/2017;Waterford">3/18/2017: Waterford</option>
+					<option value="3/23/2017;Lansing">3/23/2017: Lansing</option>
+					<option value="3/24/2017;Lansing">3/24/2017: Lansing</option>
+					<option value="3/25/2017;Lansing">3/25/2017: Lansing</option>
+				</select>
+				<br>
+				<label>Scouter:</label>
+				<input type="text" name="author" id="author" required class="form-control">
+				<br>
+				<label>Match Type:</label>
+				<select class="form-control" id="selectMatchType">
+					<option value="-1">Please select</option>
+					<option value="MATCH_QUALIFICATION">Qualification</option> 
+					<option value="MATCH_QUARTERFINALS">Quarterfinals</option> 
+					<option value="MATCH_SEMIFINALS">Semifinals</option> 
+					<option value="MATCH_FINALS">Finals</option>
+				</select>
+				<br>
+				<label>Match number:</label>
+				<select class="form-control" id="selectMatchNumber" required>
+					<option value="-1">Please select</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+					<option value="32">32</option>
+					<option value="33">33</option>
+					<option value="34">34</option>
+					<option value="35">35</option>
+					<option value="36">36</option>
+					<option value="37">37</option>
+					<option value="38">38</option>
+					<option value="39">39</option>
+					<option value="40">40</option>
+					<option value="41">41</option>
+					<option value="42">42</option>
+					<option value="43">43</option>
+					<option value="44">44</option>
+					<option value="45">45</option>
+					<option value="46">46</option>
+					<option value="47">47</option>
+					<option value="48">48</option>
+					<option value="49">49</option>
+					<option value="50">50</option>
+					<option value="51">51</option>
+					<option value="52">52</option>
+					<option value="53">53</option>
+					<option value="54">54</option>
+					<option value="55">55</option>
+					<option value="56">56</option>
+					<option value="57">57</option>
+					<option value="58">58</option>
+					<option value="59">59</option>
+					<option value="60">60</option>
+					<option value="61">61</option>
+					<option value="62">62</option>
+					<option value="63">63</option>
+					<option value="64">64</option>
+					<option value="65">65</option>
+					<option value="66">66</option>
+					<option value="67">67</option>
+					<option value="68">68</option>
+					<option value="69">69</option>
+					<option value="70">70</option>
+					<option value="71">71</option>
+					<option value="72">72</option>
+					<option value="73">73</option>
+					<option value="74">74</option>
+					<option value="75">75</option>
+					<option value="76">76</option>
+					<option value="77">77</option>
+					<option value="78">78</option>
+					<option value="79">79</option>
+					<option value="80">80</option>
+				</select>
+				<br>
+				<label>Alliance:</label>
+				<select class="form-control" id="selectAlliance" required>
+					<option value="-1">Please select</option>
+					<option value="Red" style="color: red">Red</option>
+					<option value="Blue" style="color: blue">Blue</option>
+				</select>
+				<br>
+				<label>Team:</label>
+				<select class="form-control" id="selectTeam" required>
+					<option value="-1">Please select</option>
+					<option value="1 - The Juggernauts">1 - The Juggernauts</option>
+					<option value="27 - Team RUSH">27 - Team RUSH</option>
+					<option value="33 - Killer Bees">33 - Killer Bees</option>
+					<option value="67 - The HOT Team">67 - The HOT Team</option>
+					<option value="68 - Truck Town Thunder">68 - Truck Town Thunder</option>
+					<option value="70 - More Martians">70 - More Martians</option>
+					<option value="216 - More RoboDawgs">216 - More RoboDawgs</option>
+					<option value="244 - RoboDawgs 3D">244 - RoboDawgs 3D</option>
+					<option value="288 - The RoboDawgs">288 - The RoboDawgs</option>
+					<option value="302 - The Dragons">302 - The Dragons</option>
+					<option value="308 - The Monsters">308 - The Monsters</option>
+					<option value="468 - Aftershock">468 - Aftershock</option>
+					<option value="494 - Martians">494 - Martians</option>
+					<option value="548 - Robostangs">548 - Robostangs</option>
+					<option value="1076 - Pi Hi Samurai">1076 - Pi Hi Samurai</option>
+					<option value="1504 - Desperate Penguins">1504 - Desperate Penguins</option>
+					<option value="1701 - RoboCubs">1701 - RoboCubs</option>
+					<option value="1718 - The Fighting Pi">1718 - The Fighting Pi</option>
+					<option value="2137 - TORC">2137 - TORC</option>
+					<option value="2474 - Excel">2474 - Excel</option>
+					<option value="2611 - Jacktown Vectors">2611 - Jacktown Vectors</option>
+					<option value="2620 - Titans">2620 - Titans</option>
+					<option value="2673 - Tenacious Technicians">2673 - Tenacious Technicians</option>
+					<option value="2771 - Code Red Robotics the Stray Dogs">2771 - Code Red Robotics the Stray Dogs</option>
+					<option value="3234 - Red Arrows">3234 - Red Arrows</option>
+					<option value="3302 - TurboTrojans">3302 - TurboTrojans</option>
+					<option value="3322 - Eagle Imperium">3322 - Eagle Imperium</option>
+					<option value="3357 - COMETS">3357 - COMETS</option>
+					<option value="3536 - Electro Eagles">3536 - Electro Eagles</option>
+					<option value="3539 - Byting Bulldogs">3539 - Byting Bulldogs</option>
+					<option value="3568 - RoboEagles">3568 - RoboEagles</option>
+					<option value="3655 - Tractor Technicians">3655 - Tractor Technicians</option>
+					<option value="3668 - TroBots">3668 - TroBots</option>
+					<option value="4130 - The Blue Devils">4130 - The Blue Devils</option>
+					<option value="4216 - Blue Ops Robotics">4216 - Blue Ops Robotics</option>
+					<option value="4390 - ATA  Coregears">4390 - ATA  Coregears</option>
+					<option value="4779 - RoboSapiens">4779 - RoboSapiens</option>
+					<option value="4838 - Panthers">4838 - Panthers</option>
+					<option value="4851 - JungleBots">4851 - JungleBots</option>
+					<option value="4854 - Trobots">4854 - Trobots</option>
+					<option value="4961 - Shock and Awe-sum">4961 - Shock and Awe-sum</option>
+					<option value="5065 - Knights">5065 - Knights</option>
+					<option value="5084 - Corunna Robotics Team FridgeBot">5084 - Corunna Robotics Team FridgeBot</option>
+					<option value="5090 - Torque-Nados">5090 - Torque-Nados</option>
+					<option value="5114 - Titanium Tigers">5114 - Titanium Tigers</option>
+					<option value="5152 - Alotobots">5152 - Alotobots</option>
+					<option value="5155 - Bearcats">5155 - Bearcats</option>
+					<option value="5205 - CHS FullMetal-Jackets">5205 - CHS FullMetal-Jackets</option>
+					<option value="5225 - The Shambotz">5225 - The Shambotz</option>
+					<option value="5234 - MarauderBots">5234 - MarauderBots</option>
+					<option value="5282 - Railroaders">5282 - Railroaders</option>
+					<option value="5467 - RoboTractors">5467 - RoboTractors</option>
+					<option value="5498 - Wired Devils">5498 - Wired Devils</option>
+					<option value="5524 - MacroProcessors ">5524 - MacroProcessors </option>
+					<option value="5532 - The G.O.A.T.S">5532 - The G.O.A.T.S</option>
+					<option value="5561 - Raider Robotics">5561 - Raider Robotics</option>
+					<option value="5562 - Laker Logistics">5562 - Laker Logistics</option>
+					<option value="5641 - Eagles">5641 - Eagles</option>
+					<option value="5641 - Eagles">5641 - Eagles</option>
+					<option value="5662 - A Flock of Nerds">5662 - A Flock of Nerds</option>
+					<option value="5674 - The GEARHOUNDS">5674 - The GEARHOUNDS</option>
+					<option value="5676 - The H.E.R.O.E.S">5676 - The H.E.R.O.E.S</option>
+					<option value="5704 - Blended Learning Academies">5704 - Blended Learning Academies</option>
+					<option value="5843 - Flurb">5843 - Flurb</option>
+					<option value="5860 - Full Metal Muskrats">5860 - Full Metal Muskrats</option>
+					<option value="6078 - RoboRams">6078 - RoboRams</option>
+					<option value="6085 - Devil Bots">6085 - Devil Bots</option>
+					<option value="6090 - Wayland Wildcats">6090 - Wayland Wildcats</option>
+					<option value="6091 - Eagle 1">6091 - Eagle 1</option>
+					<option value="6117 - Wingspan">6117 - Wingspan</option>
+					<option value="6150 - BlueBotics">6150 - BlueBotics</option>
+					<option value="6344 - Yale Jiggawattz">6344 - Yale Jiggawattz</option>
+					<option value="6548 - Perry High School Ramblers">6548 - Perry High School Ramblers</option>
+					<option value="6591 - Stockbridge Panthers">6591 - Stockbridge Panthers</option>
+					<option value="6592 - Sexton Redbots">6592 - Sexton Redbots</option>
+					<option value="6594 - VIKINGS NATION">6594 - VIKINGS NATION</option>
+					<option value="6595 - Fortis Quake">6595 - Fortis Quake</option>
+					<option value="6610 - Robot Roll Call">6610 - Robot Roll Call</option>
+					<option value="6635 - JPEC Falcons">6635 - JPEC Falcons</option>
+
+				</select>
+				<br>
+				<label>Starting position</label>
+				<select id="selectStartPosition" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="0">Boiler</option>
+					<option value="1">Center</option>
+					<option value="2">Human Player Side</option>
+				</select>
+				<br>
+				<h2>Autonomous:</h2>
+				<hr>
+				<br>
+				<label>Things done in autonomous mode:</label>
+				<br>
+				<input type="checkbox" id="checkboxDeliveredBalls">Delivered balls<br>
+				<input type="checkbox" id="checkboxDeliveredGear">Delivered gear<br>
+				<input type="checkbox" id="checkboxCrossLine">Crossed the line<br>
+				<br>
+				<h2>Teleop:</h2>
+				<hr>
+				<br>
+				<label>High goal accuracy:</label>
+				<select id="selectHighGoalAccuracy" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="0">Nothing</option>
+					<option value="1">Less than 50%</option>
+					<option value="2">Higher than 50%</option>
+				</select>
+				<br>
+				<label>Low goal accuracy:</label>
+				<select id="selectLowGoalAccuracy" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="0">Nothing</option>
+					<option value="1">Less than 50%</option>
+					<option value="2">Higher than 50%</option>
+				</select>
+				<br>
+				<label>Amount of gears delivered:</label>
+				<select class="form-control" id="selectAmountGearsDelivered">
+					<option value="-1">Please select</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+				</select>
+				<br>
+				<label>Did they successfully climbed:</label>
+				<select id="selectClimed" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+				<br>
+				<label>Did they finish the match</label>
+				<select id="selectFinishMatch" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</select>
+				<br>
+				<label>Strategy</label>
+				<select id="selectStrategy" class="form-control">
+					<option value="-1">Please select</option>
+					<option value="0">Offensive</option>
+					<option value="1">Defensive</option>
+					<option value="2">Both</option>
+				</select>
+				<br>
+				<label>Comments:</label>
+				<input type="text" name="comments" id="comments" class="form-control">
+				<br>
+				<button id="submit" class="btn btn-primary">Submit</button>
+				<button id="print" class="btn btn-warning">Print</button>
+				<button id="clear" class="btn btn-default">Clear</button>
+
+				
+
+			</div>
+    	
+	
+		<br>
+		<div id="qrcode" style="width:200px; height:200px; margin-top:15px; margin-bottom: 48px;"></div>
+		<br>
+		<br>
+		<p>Coded by <a href="http://www.codeteddy.de">Alexander Kaschta</a></p>
+	
+	
+		<script type="text/javascript">
+			var done = false;
+
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				width : 300,
+				height : 300,
+				correctLevel : QRCode.CorrectLevel.M
+			});
+
+			$("#submit").on("click", function(){
+				console.log("Clicked!");
+				makeCode();
+			});
+
+			$("#print").on("click", function(){
+				if(done){
+					window.print();
+				}
+				else{
+					alert("Please submit first");
+					return;
+				}
+				
+			});
+
+			$("#clear").on("click", function(){
+				console.log("Clearing");
+				done = false;
+				console.clear();
+				document.getElementById("selectEvent").selectedIndex = 0;
+				document.getElementById("author").value = "";
+				document.getElementById("selectMatchNumber").selectedIndex = 0;
+				document.getElementById("selectAlliance").selectedIndex = 0;
+				document.getElementById("selectTeam").selectedIndex = 0;
+				document.getElementById("selectStartPosition").selectedIndex = 0;
+				document.getElementById("selectMatchType").selectedIndex = 0;
+				
+				document.getElementById("checkboxDeliveredBalls").checked = false;
+				document.getElementById("checkboxDeliveredGear").checked = false;
+				document.getElementById("checkboxCrossLine").checked = false;
+	
+				document.getElementById("selectHighGoalAccuracy").selectedIndex = 0;
+				document.getElementById("selectLowGoalAccuracy").selectedIndex = 0;
+				document.getElementById("selectAmountGearsDelivered").selectedIndex = 0;
+				document.getElementById("selectClimed").selectedIndex = 0;
+				document.getElementById("selectFinishMatch").selectedIndex = 0;
+				document.getElementById("selectStrategy").selectedIndex = 0;
+				document.getElementById("comments").value = "";
+				
+			});
+
+
+			function makeCode(){
+				var event = document.getElementById("selectEvent");
+				var author = document.getElementById("author");
+				var matchnumber = document.getElementById("selectMatchNumber");
+				var alliance = document.getElementById("selectAlliance");
+				var teamnumber = document.getElementById("selectTeam");
+				var startPosition = document.getElementById("selectStartPosition");
+				var matchtype = document.getElementById("selectMatchType");
+				//Checkboxes
+				var checkboxDeliveredHigh = document.getElementById("checkboxDeliveredBalls");
+				var checkboxDeliveredGear = document.getElementById("checkboxDeliveredGear");
+				var checkboxCrossLine = document.getElementById("checkboxCrossLine");
+				
+				var highGoalAccuracy = document.getElementById("selectHighGoalAccuracy");
+				var lowGoalAccuracy = document.getElementById("selectLowGoalAccuracy");
+				var gearsDelivered = document.getElementById("selectAmountGearsDelivered");
+				var climbed = document.getElementById("selectClimed");
+				var finishMatch = document.getElementById("selectFinishMatch");
+				var strategy = document.getElementById("selectStrategy");
+				var comments = document.getElementById("comments");
+	
+				
+				if(event.options[event.selectedIndex].value == -1){
+					alert("Please select event");
+					return;
+				}
+				else if(!author.value.replace(";", "")){
+					alert("Please enter your name");
+					return;
+				}
+				else if(matchtype.options[matchtype.selectedIndex].value == -1){
+					alert("Please select a match type");
+					return;
+				}
+				else if(matchnumber.options[matchnumber.selectedIndex].value == -1){
+					alert("Please select a match number");
+					return;
+				}
+				else if(alliance.options[alliance.selectedIndex].value == -1){
+					alert("Please select an alliance");
+					return;
+				}
+				else if(teamnumber.options[teamnumber.selectedIndex].value == -1){
+					alert("Please select a team number");
+					return;
+				}
+				else if(startPosition.options[startPosition.selectedIndex].value == -1){
+					alert("Please select a start position");
+					return;
+				}
+				else if(highGoalAccuracy.options[highGoalAccuracy.selectedIndex].value == -1){
+					alert("Please select a high goal accuracy");
+					return;
+				}
+				else if(lowGoalAccuracy.options[lowGoalAccuracy.selectedIndex].value == -1){
+					alert("Please select a low goal accuracy");
+					return;
+				}
+				else if(gearsDelivered.options[gearsDelivered.selectedIndex].value == -1){
+					alert("Please select an amount of gears, that had been delivered");
+					return;
+				}
+				else if(selectClimed.options[selectClimed.selectedIndex].value == -1){
+					alert("Please select, if they climbed successfully");
+					return;
+				}
+				else if(selectFinishMatch.options[selectFinishMatch.selectedIndex].value == -1){
+					alert("Please select, if they finished the match");
+					return;
+				}
+				else if(selectStrategy.options[selectStrategy.selectedIndex].value == -1){
+					alert("Please select, what strategy they used");
+					return;
+				}
+				else {
+					console.log("Everything is fine");
+
+					if(comments.value.replace(";", "") == ""){
+						var textcomment = "NO_COMMENTS";
+					}
+					else{
+						var textcomment = comments.value.replace(";", "");
+					}
+					console.log(textcomment);
+
+					var text = "FRC2017;"+ matchtype.options[matchtype.selectedIndex].value +";" + event.options[event.selectedIndex].value + ";" + author.value.replace(";", "") + ";" + matchnumber.options[matchnumber.selectedIndex].value + ";" +  alliance.options[alliance.selectedIndex].value + ";" + teamnumber.options[teamnumber.selectedIndex].value + ";" + startPosition.options[startPosition.selectedIndex].value + ";" + Number(checkboxDeliveredBalls.checked) + ";" + Number(checkboxDeliveredGear.checked) + ";" + Number(checkboxCrossLine.checked) + ";" + highGoalAccuracy.options[highGoalAccuracy.selectedIndex].value + ";" +  lowGoalAccuracy.options[lowGoalAccuracy.selectedIndex].value + ";" + gearsDelivered.options[gearsDelivered.selectedIndex].value + ";" + selectClimed.options[selectClimed.selectedIndex].value + ";" + selectFinishMatch.options[selectFinishMatch.selectedIndex].value + ";" + selectStrategy.options[selectStrategy.selectedIndex].value + ";" + textcomment + ";" ;
+
+					console.log(text);
+					done =  true;
+					qrcode.makeCode(text);
+
+
+					$.post("api/create_entry.php",
+    				{
+        				type: "MATCH",
+        				qrcode: text
+    				},
+    				function(data, status){
+        				alert("Data: " + data + "\nStatus: " + status);
+    				});
+
+
+				}
+
+			}
+
+
+	</script>
+
+	</div>
+</body>
+</html>
