@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/labelEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Event:" />
+
+            <Spinner
+                android:id="@+id/selectEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelEvent"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/events" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Match type:"
+                android:id="@+id/labelMatchType"
+                android:layout_below="@id/selectEvent"
+                android:layout_marginBottom="16dp"/>
+
+            <Spinner
+                android:entries="@array/matchtypes"
+                android:layout_below="@+id/labelMatchType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/selectMatchType"/>
+
+            <TextView
+                android:id="@+id/labelMatchNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectMatchType"
+                android:layout_marginBottom="16dp"
+                android:text="Matchnumber:" />
+
+            <Spinner
+                android:id="@+id/selectMatchNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelMatchNumber"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/matchnumbers" />
+
+            <TextView
+                android:id="@+id/labelAlliance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectMatchNumber"
+                android:layout_marginBottom="16dp"
+                android:text="Alliance:" />
+
+            <Spinner
+                android:id="@+id/selectAlliance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelAlliance"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/alliances" />
+
+            <TextView
+                android:id="@+id/labelTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectAlliance"
+                android:layout_marginBottom="16dp"
+                android:text="Team:" />
+
+            <Spinner
+                android:id="@+id/selectTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelTeam"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/teams" />
+
+            <TextView
+                android:id="@+id/labelStartingPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectTeam"
+                android:layout_marginBottom="16dp"
+                android:text="Starting position:" />
+
+            <Spinner
+                android:id="@+id/selectStartingPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelStartingPosition"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/startingPosition" />
+
+            <TextView
+                android:id="@+id/labelAutonomous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectStartingPosition"
+                android:layout_marginBottom="16dp"
+                android:text="Things done in autonomous mode:" />
+
+            <RelativeLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelAutonomous">
+
+                <CheckBox
+                    android:id="@+id/toggleBalls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Delivered balls" />
+
+                <CheckBox
+                    android:id="@+id/toggleGear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toggleBalls"
+                    android:layout_marginBottom="16dp"
+                    android:text="Delivered gear" />
+
+                <CheckBox
+                    android:id="@+id/toggleLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toggleGear"
+                    android:layout_marginBottom="16dp"
+                    android:text="Crossed line" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/labelHighGoalAccuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame"
+                android:layout_marginBottom="16dp"
+                android:text="High Goal Accuracy" />
+
+            <Spinner
+                android:id="@+id/selectHighGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelHighGoalAccuracy"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/accuracy" />
+
+            <TextView
+                android:id="@+id/labelLowGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectHighGoal"
+                android:layout_marginBottom="16dp"
+                android:text="Low Goal Accuracy" />
+
+            <Spinner
+                android:id="@+id/selectLowGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelLowGoal"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/accuracy" />
+
+            <TextView
+                android:id="@+id/labelGearsDelivered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectLowGoal"
+                android:layout_marginBottom="16dp"
+                android:text="Gears scored" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectGears"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/gears"
+                android:layout_below="@+id/labelGearsDelivered"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/labelClimbing"
+                android:text="Did they climb successfully:"
+                android:layout_below="@+id/selectGears"/>
+
+            <Spinner
+                android:layout_below="@+id/labelClimbing"
+                android:id="@+id/selectClimbing"
+                android:entries="@array/yesno"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/labelFinish"
+                android:text="Did they finish the game:"
+                android:layout_below="@+id/selectClimbing"/>
+
+            <Spinner
+                android:id="@+id/selectFinish"
+                android:entries="@array/yesno"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/labelFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/labelStrategy"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/selectFinish"
+                android:text="Select strategy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/selectStrategy"
+                android:layout_below="@+id/labelStrategy"
+                android:entries="@array/strategy"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment:"
+                android:id="@+id/labelComment"
+                android:layout_below="@+id/selectStrategy"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="0"
+                android:id="@+id/inputComment"
+                android:layout_below="@+id/labelComment"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:layout_below="@+id/inputComment"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

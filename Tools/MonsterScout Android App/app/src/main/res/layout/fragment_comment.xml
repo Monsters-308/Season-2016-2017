@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/labelEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Event:" />
+
+    <Spinner
+        android:id="@+id/selectEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelEvent"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/events" />
+
+    <TextView
+        android:id="@+id/labelTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectEvent"
+        android:layout_marginBottom="8dp"
+        android:text="Team:" />
+
+
+    <Spinner
+        android:id="@+id/selectTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelTeam"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/teams" />
+
+    <TextView
+        android:id="@+id/labelMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectTeam"
+        android:layout_marginBottom="8dp"
+        android:text="Message" />
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelMessage"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/buttom_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_message"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

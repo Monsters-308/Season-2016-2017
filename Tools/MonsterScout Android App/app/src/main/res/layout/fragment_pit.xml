@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/labelEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Event" />
+
+            <Spinner
+                android:id="@+id/selectEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelEvent"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/events" />
+
+            <TextView
+                android:id="@+id/labelTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectEvent"
+                android:layout_marginBottom="16dp"
+                android:text="Team" />
+
+            <Spinner
+                android:id="@+id/selectTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelTeam"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/teams" />
+
+            <TextView
+                android:id="@+id/labelDriveTrain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectTeam"
+                android:layout_marginBottom="16dp"
+                android:text="Drivetrain" />
+
+            <Spinner
+                android:id="@+id/selectDriveTrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelDriveTrain"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/drivetraintypes" />
+
+            <TextView
+                android:id="@+id/labelWheels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectDriveTrain"
+                android:layout_marginBottom="16dp"
+                android:text="Amount of wheels" />
+
+            <Spinner
+                android:id="@+id/selectWheels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelWheels"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/wheels" />
+
+            <TextView
+                android:id="@+id/labelDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectWheels"
+                android:layout_marginBottom="16dp"
+                android:text="Robot Design" />
+
+            <Spinner
+                android:id="@+id/selectDesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelDesign"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/strategy" />
+
+            <TextView
+                android:id="@+id/labelGearsGround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectDesign"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to pickup gears from the ground?" />
+
+            <Spinner
+                android:id="@+id/selectGearsGround"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelGearsGround"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelBallsGround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectGearsGround"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to pickup balls frorm the ground?" />
+
+            <Spinner
+                android:id="@+id/selectBallsGround"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelBallsGround"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelScoreHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectBallsGround"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to score balls high?" />
+
+            <Spinner
+                android:id="@+id/selectScoreHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelScoreHigh"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelScoreLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectScoreHigh"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to score balls low?" />
+
+            <Spinner
+                android:id="@+id/selectScoreLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelScoreLow"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelScoreGears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectScoreLow"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to score gears?" />
+
+            <Spinner
+                android:id="@+id/selectScoreGears"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelScoreGears"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelClimbing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectScoreGears"
+                android:layout_marginBottom="16dp"
+                android:text="Are they able to climb?" />
+
+            <Spinner
+                android:id="@+id/selectClimbing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelClimbing"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelProblems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectClimbing"
+                android:layout_marginBottom="16dp"
+                android:text="Did they have any complications with their robot during matches?" />
+
+            <Spinner
+                android:id="@+id/selectProblems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelProblems"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/yesno" />
+
+            <TextView
+                android:id="@+id/labelRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectProblems"
+                android:layout_marginBottom="16dp"
+                android:text="How do they rank themselves out of five?" />
+
+            <Spinner
+                android:id="@+id/selectRanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelRanking"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/ownranking" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:layout_below="@+id/selectRanking"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/labelComment"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/inputComment"
+                android:layout_below="@+id/labelComment"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:layout_below="@+id/inputComment"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

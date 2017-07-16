@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">FRC Scout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_qrcode">QRCodeActivity</string>
+
+    <string name="promptTeam">Team:</string>
+    <string-array name="events">
+        <item>Please select</item>
+        <item>3/16/2017: Waterford</item>
+        <item>3/17/2017: Waterford</item>
+        <item>3/18/2017: Waterford</item>
+        <item>3/23/2017: Lansing</item>
+        <item>3/24/2017: Lansing</item>
+        <item>3/25/2017: Lansing</item>
+    </string-array>
+
+    <string-array name="matchtypes">
+        <item>Please select</item>
+        <item>Qualification</item>
+        <item>Quarterfinals</item>
+        <item>Semifinals</item>
+        <item>Finals</item>
+    </string-array>
+
+    <string-array name="startingPosition">
+        <item>Please select</item>
+        <item>Boiler</item>
+        <item>Center</item>
+        <item>Human Player Side</item>
+    </string-array>
+
+    <string-array name="alliances">
+        <item>Please select</item>
+        <item>Red</item>
+        <item>Blue</item>
+    </string-array>
+
+    <string-array name="accuracy">
+        <item>Please select</item>
+        <item>Nothing</item>
+        <item>Less than 50%</item>
+        <item>More than 50%</item>
+    </string-array>
+
+    <string-array name="ownranking">
+        <item>Please select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="yesno">
+        <item>Please select</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="strategy">
+        <item>Please select</item>
+        <item>Offensive</item>
+        <item>Defensive</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="gears">
+        <item>Please select</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="wheels">
+        <item>Please select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="drivetraintypes">
+        <item>Please select</item>
+        <item>Tank</item>
+        <item>Swerve</item>
+        <item>Slide</item>
+        <item>Mecanum</item>
+        <item>Holomonic</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="matchnumbers">
+        <item>Please select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+    </string-array>
+
+    <string-array name="teams">
+        <item>Please select</item>
+        <item>1 - The Juggernauts</item>
+        <item>27 - Team RUSH</item>
+        <item>33 - Killer Bees</item>
+        <item>67 - The HOT Team</item>
+        <item>68 - Truck Town Thunder</item>
+        <item>70 - More Martians</item>
+        <item>216 - More RoboDawgs</item>
+        <item>244 - RoboDawgs 3D</item>
+        <item>288 - The RoboDawgs</item>
+        <item>302 - The Dragons</item>
+        <item>308 - The Monsters</item>
+        <item>468 - Aftershock</item>
+        <item>494 - Martians</item>
+        <item>548 - Robostangs</item>
+        <item>1076 - Pi Hi Samurai</item>
+        <item>1504 - Desperate Penguins</item>
+        <item>1701 - RoboCubs</item>
+        <item>1718 - The Fighting Pi</item>
+        <item>2137 - TORC</item>
+        <item>2474 - Excel</item>
+        <item>2611 - Jacktown Vectors</item>
+        <item>2620 - Titans</item>
+        <item>2673 - Tenacious Technicians</item>
+        <item>2771 - Code Red Robotics the Stray Dogs</item>
+        <item>3234 - Red Arrows</item>
+        <item>3302 - TurboTrojans</item>
+        <item>3322 - Eagle Imperium</item>
+        <item>3357 - COMETS</item>
+        <item>3536 - Electro Eagles</item>
+        <item>3539 - Byting Bulldogs</item>
+        <item>3568 - RoboEagles</item>
+        <item>3655 - Tractor Technicians</item>
+        <item>3668 - TroBots</item>
+        <item>4130 - The Blue Devils</item>
+        <item>4216 - Blue Ops Robotics</item>
+        <item>4390 - ATA  Coregears</item>
+        <item>4779 - RoboSapiens</item>
+        <item>4838 - Panthers</item>
+        <item>4851 - JungleBots</item>
+        <item>4854 - Trobots</item>
+        <item>4961 - Shock and Awe-sum</item>
+        <item>5065 - Knights</item>
+        <item>5084 - Corunna Robotics Team FridgeBot</item>
+        <item>5090 - Torque-Nados</item>
+        <item>5114 - Titanium Tigers</item>
+        <item>5152 - Alotobots</item>
+        <item>5155 - Bearcats</item>
+        <item>5205 - CHS FullMetal-Jackets</item>
+        <item>5225 - The Shambotz</item>
+        <item>5234 - MarauderBots</item>
+        <item>5282 - Railroaders</item>
+        <item>5467 - RoboTractors</item>
+        <item>5498 - Wired Devils</item>
+        <item>5524 - MacroProcessors </item>
+        <item>5532 - The G.O.A.T.S</item>
+        <item>5561 - Raider Robotics</item>
+        <item>5562 - Laker Logistics</item>
+        <item>5641 - Eagles</item>
+        <item>5641 - Eagles</item>
+        <item>5662 - A Flock of Nerds</item>
+        <item>5674 - The GEARHOUNDS</item>
+        <item>5676 - The H.E.R.O.E.S</item>
+        <item>5704 - Blended Learning Academies</item>
+        <item>5843 - Flurb</item>
+        <item>5860 - Full Metal Muskrats</item>
+        <item>6078 - RoboRams</item>
+        <item>6085 - Devil Bots</item>
+        <item>6090 - Wayland Wildcats</item>
+        <item>6091 - Eagle 1</item>
+        <item>6117 - Wingspan</item>
+        <item>6150 - BlueBotics</item>
+        <item>6344 - Yale Jiggawattz</item>
+        <item>6548 - Perry High School Ramblers</item>
+        <item>6591 - Stockbridge Panthers</item>
+        <item>6592 - Sexton Redbots</item>
+        <item>6594 - VIKINGS NATION</item>
+        <item>6595 - QUAKE</item>
+        <item>6610 - Robot Roll Call</item>
+        <item>6635 - JPEC Falcons</item>
+    </string-array>
+</resources>

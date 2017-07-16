@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.jenzz.materialpreference.PreferenceCategory android:title="User">
+
+        <EditTextPreference
+            android:key="user_name"
+            android:title="Name"
+            android:summary="Your first and last name"
+            android:defaultValue="@string/app_name"/>
+
+    </com.jenzz.materialpreference.PreferenceCategory>
+
+    <com.jenzz.materialpreference.PreferenceCategory android:title="UI">
+
+        <com.jenzz.materialpreference.SwitchPreference
+            android:enabled="false"
+            android:title="Remember last position"
+            android:defaultValue="true"
+            android:summary="Save state"/>
+
+    </com.jenzz.materialpreference.PreferenceCategory>
+
+    <!--
+
+    <com.jenzz.materialpreference.PreferenceCategory android:title="Data">
+
+
+        <com.jenzz.materialpreference.CheckBoxPreference
+            android:key="settings_main_data_crash_reports"
+            android:summary="Should data be sent"
+            android:enabled="false"
+            android:title="Send crash reports" />
+
+    </com.jenzz.materialpreference.PreferenceCategory>
+
+    <com.jenzz.materialpreference.PreferenceCategory
+        android:title="Development">
+
+        <com.jenzz.materialpreference.SwitchPreference
+            android:title="Enable development mode"
+            android:enabled="false"
+            android:defaultValue="false" />
+
+    </com.jenzz.materialpreference.PreferenceCategory> -->
+
+
+</PreferenceScreen>
